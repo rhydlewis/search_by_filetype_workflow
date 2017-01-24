@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5EB53BA0-9325-4ACD-8A9F-C273BA188D6A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07E53848-F1AC-47F6-989F-0DB604FF1112</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>861E3CA7-2460-4A23-BC16-3B60D6426181</key>
 		<array>
 			<dict>
@@ -52,6 +65,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>74138C34-B8A1-4DE4-9E30-E9DF8DFDD232</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CE324973-2095-499D-8686-E01FB4BD7644</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07E53848-F1AC-47F6-989F-0DB604FF1112</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -468,11 +494,173 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>ffa</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array>
+					<string>~/bin</string>
+					<string>~/Desktop</string>
+					<string>~/Documents</string>
+					<string>~/Downloads</string>
+					<string>~/Dropbox (Personal)</string>
+					<string>~/Guitar</string>
+					<string>~/Movies</string>
+					<string>~/Music</string>
+					<string>~/Pictures</string>
+					<string>~/Public</string>
+					<string>~/temp</string>
+					<string>~/zArchive</string>
+				</array>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search personal folders in ~ only</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>5EB53BA0-9325-4ACD-8A9F-C273BA188D6A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>07E53848-F1AC-47F6-989F-0DB604FF1112</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>ff</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array>
+					<string>/Volumes/Data/rhyd</string>
+					<string>~</string>
+				</array>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search all folders in home</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>CE324973-2095-499D-8686-E01FB4BD7644</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>07E53848-F1AC-47F6-989F-0DB604FF1112</key>
+		<dict>
+			<key>xpos</key>
+			<integer>450</integer>
+			<key>ypos</key>
+			<integer>820</integer>
+		</dict>
 		<key>369D76BA-421F-4769-8ADC-EC8ADF3F945D</key>
 		<dict>
 			<key>xpos</key>
@@ -494,6 +682,13 @@
 			<key>ypos</key>
 			<integer>380</integer>
 		</dict>
+		<key>5EB53BA0-9325-4ACD-8A9F-C273BA188D6A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>820</integer>
+		</dict>
 		<key>74138C34-B8A1-4DE4-9E30-E9DF8DFDD232</key>
 		<dict>
 			<key>xpos</key>
@@ -514,6 +709,13 @@
 			<integer>250</integer>
 			<key>ypos</key>
 			<integer>520</integer>
+		</dict>
+		<key>CE324973-2095-499D-8686-E01FB4BD7644</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>940</integer>
 		</dict>
 		<key>FF8E3BE3-2E94-4801-8A01-9AA8DE17340B</key>
 		<dict>

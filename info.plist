@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7D45B6C3-76EE-47AB-8B37-B47AF57F687A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>74138C34-B8A1-4DE4-9E30-E9DF8DFDD232</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>861E3CA7-2460-4A23-BC16-3B60D6426181</key>
 		<array>
 			<dict>
@@ -86,6 +99,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EB5A9182-5F71-4DBB-A9B7-F7A1E8A86BBF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>74138C34-B8A1-4DE4-9E30-E9DF8DFDD232</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>FF8E3BE3-2E94-4801-8A01-9AA8DE17340B</key>
 		<array>
 			<dict>
@@ -110,6 +136,80 @@
 	<string>Search by filetype</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<false/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<false/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<false/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>?u</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search Ulysses files</string>
+				<key>types</key>
+				<array>
+					<string>com.soulmen.ulysses3.sheet</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>7D45B6C3-76EE-47AB-8B37-B47AF57F687A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -250,7 +350,7 @@
 				<key>includesystem</key>
 				<false/>
 				<key>keyword</key>
-				<string>?i</string>
+				<string>?im</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>scopes</key>
@@ -428,6 +528,80 @@
 			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
 			<string>369D76BA-421F-4769-8ADC-EC8ADF3F945D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>?it</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search for iThoughts files</string>
+				<key>types</key>
+				<array>
+					<string>com.toketaware.ithoughtsx</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>EB5A9182-5F71-4DBB-A9B7-F7A1E8A86BBF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -673,7 +847,7 @@
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>270</integer>
 		</dict>
 		<key>5EA9527B-0C02-4BB2-A44B-2A2C56930D20</key>
 		<dict>
@@ -696,6 +870,13 @@
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
+		<key>7D45B6C3-76EE-47AB-8B37-B47AF57F687A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
 		<key>861E3CA7-2460-4A23-BC16-3B60D6426181</key>
 		<dict>
 			<key>xpos</key>
@@ -708,7 +889,7 @@
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>490</integer>
 		</dict>
 		<key>CE324973-2095-499D-8686-E01FB4BD7644</key>
 		<dict>
@@ -717,12 +898,19 @@
 			<key>ypos</key>
 			<integer>940</integer>
 		</dict>
+		<key>EB5A9182-5F71-4DBB-A9B7-F7A1E8A86BBF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>580</integer>
+		</dict>
 		<key>FF8E3BE3-2E94-4801-8A01-9AA8DE17340B</key>
 		<dict>
 			<key>xpos</key>
 			<integer>250</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>160</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
